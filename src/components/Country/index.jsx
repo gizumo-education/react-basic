@@ -17,4 +17,11 @@ Country.prototype = {
   Info: PropTypes.exact({
     url: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
-  })}
+  })};
+
+  Country.defaultProps = {
+    width:120,
+    height:80
+  };
+
+  

@@ -25,13 +25,12 @@ export const App = () => {
       <Profile></Profile>
   <hr />
     <Card>
-    <Country
-      info = {{
+      <Country
+        info = {{
               imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
               name: 'アメリカ'
             }}
-          width={120}
-          height={80}
+        
       />
     </Card>
   <hr />
