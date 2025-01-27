@@ -1,14 +1,14 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
-import {Button} from './components/Button/index'
-import {Profile} from './components/Profile/index'
-import {Country} from './components/Country/index'
-import {Card} from './components/Card/index'
-import {TodoItem} from './components/TodoItem/index'
-import {LanguageList} from './components/LanguageList/index'
+import { Button } from './components/Button/index'
+import { Profile } from './components/Profile/index'
+import { Country } from './components/Country/index'
+import { Card } from './components/Card/index'
+import { TodoItem } from './components/TodoItem/index'
+import { LanguageList } from './components/LanguageList/index'
 import { AlertButton } from './components/AlertButton/index'
-import {InputField} from './components/InputField/index'
-import {CharacterImage} from './components/CharacterImage/index'
+import { InputField } from './components/InputField/index'
+import { CharacterImage } from './components/CharacterImage/index'
 
 export const App = () => {
   return(
@@ -28,10 +28,12 @@ export const App = () => {
 
       <hr/>
       <Card>
-      <Country info = {{
-        imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-        name: 'アメリカ'
-      }}/>
+        <Country
+          info = {{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+        />
       </Card>
 
       <hr/>
