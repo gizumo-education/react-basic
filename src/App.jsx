@@ -1,7 +1,9 @@
-import reactLogo from './assets/react.svg'
-import styles from './App.module.css'
-import Button from './components/Button/index'
-import { Profile } from './components/Profile/index'
+import reactLogo from './assets/react.svg';
+import styles from './App.module.css';
+import Button from './components/Button/index';
+import { Profile } from './components/Profile/index';
+import { Country } from './components/Country';
+import { TodoItem } from './components/TodoItem';
 
 export const App = () => {
   return (
@@ -18,6 +20,17 @@ export const App = () => {
       <hr/>
       <div>
         <Profile />
+      </div>
+      <hr/>
+      <div>
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ',
+          }}
+          width={120}
+          height={80}
+        />
       </div>
     </div>
   )
