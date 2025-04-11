@@ -6,6 +6,7 @@ import { Country } from './components/Country';
 import { TodoItem } from './components/TodoItem';
 import { AlertButton } from './components/AlertButton';
 import { InputField } from './components/InputField';
+import { CharacterImage } from './components/CharacterImage';
 
 export const App = () => {
   return (
@@ -14,7 +15,7 @@ export const App = () => {
       <h1>Hello React!</h1>
       {/* 以下に練習問題の回答を記述してください */}
       <hr/>
-      <div class>
+      <div>
         <Button />
         <Button />
         <Button />
@@ -46,6 +47,8 @@ export const App = () => {
       />
       <hr/>
       <InputField/>
+      <hr/>
+      <CharacterImage/>
     </div>
   )
 }
