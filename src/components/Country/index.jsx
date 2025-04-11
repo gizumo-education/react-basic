@@ -18,3 +18,8 @@ Country.PropTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
 }
+
+Country.defaultProps = {
+  width: 120,
+  height: 80,
+}
