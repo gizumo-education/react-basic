@@ -32,6 +32,14 @@ export const App = () => {
           height={80}
         />
       </div>
+      <hr/>
+      <div>
+      <ul>
+        <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
+        <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
+        <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
+      </ul>
+      </div>
     </div>
   )
 }
