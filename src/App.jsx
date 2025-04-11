@@ -5,6 +5,7 @@ import { Profile } from './components/Profile/index';
 import { Country } from './components/Country';
 import { TodoItem } from './components/TodoItem';
 import { AlertButton } from './components/AlertButton';
+import { InputField } from './components/InputField';
 
 export const App = () => {
   return (
@@ -43,6 +44,8 @@ export const App = () => {
       <AlertButton
         onAlert={() => alert('hogehoge')}
       />
+      <hr/>
+      <InputField/>
     </div>
   )
 }
