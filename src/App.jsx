@@ -4,6 +4,7 @@ import Button from './components/Button/index';
 import { Profile } from './components/Profile/index';
 import { Country } from './components/Country';
 import { TodoItem } from './components/TodoItem';
+import { AlertButton } from './components/AlertButton';
 
 export const App = () => {
   return (
@@ -33,13 +34,15 @@ export const App = () => {
         />
       </div>
       <hr/>
-      <div>
       <ul>
         <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
         <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
-      </div>
+      <hr/>
+      <AlertButton
+        onAlert={() => alert('hogehoge')}
+      />
     </div>
   )
 }
