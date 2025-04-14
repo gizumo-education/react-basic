@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
+// nameの後ろに「✔︎」マークが付与の条件分岐を設定する
+// isCompletedがtureなら「✔︎」を付与する
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  return <li className={styles.name}>{name}</li>
+  if (isToday) {
+    return (
+      <li className={styles.name}>{name}{isCompleted && ' ✔︎'}</li>
+    );
+  }
 }
 
 TodoItem.propTypes = {
