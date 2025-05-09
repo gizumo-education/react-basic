@@ -7,7 +7,6 @@ export const CharacterImage = () => {
 
 	useEffect(() => {
 		axios.get('https://pokeapi.co/api/v2/pokemon/1').then((res) => {
-			console.log(res.data.sprites.other['official-artwork']['front_default']);
 			setImgUrl(res.data.sprites.other['official-artwork']['front_default']);
 		});
 	}, []);

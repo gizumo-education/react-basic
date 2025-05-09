@@ -18,18 +18,3 @@ export const LanguageList = () => {
 		</ul>
 	);
 };
-
-{
-	/* <li className={styles.item} key={language.id}>
-<img src={languages[0].imgUrl} />
-<p>{languages[0].name}</p>
-</li>
-<li className={styles.item} key={language.id}>
-<img src={languages[1].imgUrl} />
-<p>{languages[1].name}</p>
-</li>
-<li className={styles.item} key={language.id}>
-<img src={languages[2].imgUrl} />
-<p>{languages[2].name}</p>
-</li> */
-}

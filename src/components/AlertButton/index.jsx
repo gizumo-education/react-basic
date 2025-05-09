@@ -6,7 +6,7 @@ export const AlertButton = () => {
 	};
 
 	return (
-		<button className={styles.button} onClick={handleClick}>
+		<button className={styles.button} onClick={() => handleClick()}>
 			Alert
 		</button>
 	);
