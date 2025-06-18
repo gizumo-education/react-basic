@@ -1,7 +1,7 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button'
-
+import { Profile } from './components/Profile'
 
       {/* 以下に練習問題の回答を記述してください */}
       
@@ -18,6 +18,10 @@ export const App = () => {
             <Button />
          </div>
 
+         <hr /> 
+            < Profile />
+         
+         
 
       </div>
    )
