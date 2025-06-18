@@ -8,6 +8,7 @@ import styles from './App.module.css'
    </div>
       {/* 以下に練習問題の回答を記述してください */}
       
+   
 
       
 export const App = () => {
@@ -19,8 +20,5 @@ export const App = () => {
    )
 }
 
-   
-
-   
 
 
