@@ -4,15 +4,5 @@ export const AlertButton = () => {
     const handleAlert = () => {
   alert("きけんです！")
 }
-
-
-
   return <button className={styles.button} onClick={handleAlert}>Alert</button>
-
-
-
-
 }
-
-
-

@@ -55,7 +55,6 @@ export const App = () => {
 
             <hr />
             <CharacterImage />
-
       </div>
    )
 }

@@ -8,18 +8,8 @@ export const TodoItem = ({ name, isToday, isCompleted }) => {
   return  isCompleted && <li className={styles.name}>{name}&#x2714;</li>
 }
 
-
-
-
-
 TodoItem.propTypes = {
   name: PropTypes.string.isRequired,
   isToday: PropTypes.bool.isRequired,
   isCompleted: PropTypes.bool.isRequired,
 }
-
-
-
-
-
-// &#x2714; 

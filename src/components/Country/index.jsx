@@ -28,4 +28,3 @@ Country.defaultProps = {
   width: 120,
   height: 80
 }
-

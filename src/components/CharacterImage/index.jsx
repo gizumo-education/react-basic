@@ -16,6 +16,4 @@ useEffect(() => {
         {imgUrl && <img src={imgUrl} width={100} height={100} />}
       </>
     )
-
-  
 }

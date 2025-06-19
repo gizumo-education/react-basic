@@ -5,7 +5,6 @@ export const InputField = () => {
   const [value,setValue] = useState('')
   const handleInput = (e) => {
     setValue(e.target.value)
-
   }
 
   return (
@@ -15,5 +14,3 @@ export const InputField = () => {
     </>
   )
 }
-
-
