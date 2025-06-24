@@ -2,7 +2,19 @@ import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  return <li className={styles.name}>{name}</li>
+
+  return (
+      isToday && (isCompleted ? <li className={styles.name}>{`${name} ✔︎`}</li>
+        : <li className={styles.name}>{name}</li>)
+  )
+
+  // if (isToday) {
+  //   if (isCompleted) {
+  //     return <li className={styles.name}>{`${name} ✔︎`}</li>;
+  //   } else {
+  //     return <li className={styles.name}>{name}</li>;
+  //   }
+  // }
 }
 
 TodoItem.propTypes = {
