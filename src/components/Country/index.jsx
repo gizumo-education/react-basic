@@ -6,10 +6,10 @@ export const Country = ({info,width,height}) => {
       <img src={info.imgUrl} width={width} height={height} />
       <p className={styles.name}>{info.name}</p>
     </div>
-  )
-}
+  );
+};
 
 Country.defaultProps = {
   width: 120,
   height: 80,
-}
+};

@@ -6,13 +6,13 @@ export const Card = ({children}) => {
     <div className={styles.card}>
       {children}
     </div>
-  )
-}
+  );
+};
 
 Card.propTypes = {
   children: PropTypes.node
-}
+};
 
 Card.defaultProps = {
   children: null
-}
+};
