@@ -5,6 +5,10 @@ import { Profile } from './components/Profile';
 import { Country } from './components/Country';
 import { Card } from './components/Card';
 import { TodoItem } from './components/TodoItem';
+import { LanguageList } from './components/LanguageList';
+import { AlertButton } from './components/AlertButton';
+import { InputField } from './components/InputField';
+import { CharacterImage } from './components/CharacterImage';
 
 export const App = () => {
   return (
@@ -26,23 +30,38 @@ export const App = () => {
 
       <hr />
       {/* <!-- Countryコンポーネントのタグをここに記述 --> */}
-    <Card>
-      <Country
-        info={{
-        imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-        name: 'アメリカ'
-        }}
-      />
-    </Card>
+      <Card>
+        <Country
+          info={{
+          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+          name: 'アメリカ'
+          }}
+        />
+      </Card>
 
-    <hr />
-{/* <!-- ulタグとTodoItemコンポーネントのタグをここに記述 --> */}
-    <ul>
-      <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
-      <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
-      <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
-    </ul>
+      <hr />
+      {/* <!-- ulタグとTodoItemコンポーネントのタグをここに記述 --> */}
+      <ul>
+        <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
+        <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
+        <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
+      </ul>
 
+      <hr />
+      {/* <!-- LanguageListコンポーネントのタグをここに記述 --> */}
+        <LanguageList />
+
+      <hr />
+      {/* <!-- AlertButtonコンポーネントのタグをここに記述 --> */}
+        <AlertButton />
+
+      <hr />
+      {/* <!-- InputFieldコンポーネントのタグをここに記述 -->*/}
+        <InputField />
+
+      <hr />
+      {/* <!-- CharacterImageコンポーネントのタグをここに記述 --> */}
+        <CharacterImage />
     </div>
   )
 };
