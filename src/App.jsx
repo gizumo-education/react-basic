@@ -15,7 +15,6 @@ export const App = () => {
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
       <h1>Hello React!</h1>
-
       {/* 以下に練習問題の解答を記述してください */}
       
       <hr />
