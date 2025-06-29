@@ -2,6 +2,8 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button'
 import { Profile } from './components/Profile'
+import { Country } from './components/Country'
+import { Card } from './components/Card'
 
 export const App = () => {
   return (
@@ -13,6 +15,15 @@ export const App = () => {
         <>
           <hr /><Button /><Button /><Button />
           <hr /><Profile />
+          <hr />
+          <Card>
+            <Country
+              info={{
+                imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+                name: 'アメリカ',
+              }}
+            />
+          </Card>
         </>
       }
     </div>
@@ -23,3 +34,6 @@ export const App = () => {
 // ターミナル何がいい？⇒なんでも
 // Q押したらおわり？⇒べつべつにターミナル立てればOK
 // 時間の表示のバグ⇒参照する関数のミス
+
+
+// Country重複しないのはなぜ
