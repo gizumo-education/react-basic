@@ -1,8 +1,9 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import Button from './components/Button'
+import { Profile } from './components/Profile'
 
-export function App() {
+export const App =() => {
   return (
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -11,10 +12,13 @@ export function App() {
       <hr />
     {/* Buttonコンポーネントのタグをここに3つ記述 */}
       <Button />
-        <Button />
-        <Button />
+      <Button />
+      <Button />
+
+      <hr />
+    {/* Profileコンポーネントのタグをここに記述 */}
+      <Profile />
       
     </div>
   )
-
 } 
