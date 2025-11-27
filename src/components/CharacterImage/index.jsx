@@ -22,3 +22,9 @@ export const CharacterImage = () => {
 
 
 }
+
+// return文以外の処理は副作用
+//falseの時はレンダーされない
+//再レンダリングで画面が更新される
+
+
