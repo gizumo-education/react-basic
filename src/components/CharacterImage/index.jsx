@@ -9,11 +9,6 @@ export const CharacterImage = () => {
      axios.get('https://pokeapi.co/api/v2/pokemon/1').then((res) => {
       setImgUrl(res.data.sprites.other['official-artwork']['front_default'])
     })
-
-    axios.get('https://pokeapi.co/api/v2/pokemon/1').then((res) => {
-      console.log(res.data.sprites.other['official-artwork']['front_default']) // 複数回表示される
-      setImgUrl(res.data.sprites.other['official-artwork']['front_default'])
-    })
   },[])
 
 
