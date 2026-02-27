@@ -1,8 +1,8 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
-import Button from './components/Button/index.jsx'
+import {Button} from './components/Button/index.jsx'
+import  {Profile} from './components/Profile/index.jsx'
 
-//Section3
 export const App = () => {
   return (
     <div>
@@ -11,12 +11,17 @@ export const App = () => {
 
       {/* 以下に練習問題の回答を記述してください */}
       <hr />
-      
+
       <div>
         <Button />
         <Button />
         <Button />
       </div>
+
+      <hr />
+
+      <Profile />
+
     </div>
   )
 }
