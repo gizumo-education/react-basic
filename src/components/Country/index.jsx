@@ -19,8 +19,3 @@ Country.propTypes = {
   height: PropTypes.number,
 }
 
-Country.defaultProps = {
-  width: 120,
-  height: 80,
-}
-
