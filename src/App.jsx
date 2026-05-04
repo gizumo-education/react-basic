@@ -2,8 +2,9 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button'
 import { Profile } from './components/Profile'
-import { Card } from './components/Card' 
+import { Card } from './components/Card'
 import { Country } from './components/Country'
+import { TodoItem } from './components/TodoItem'
 
 export const App = () => {
   return (
@@ -18,16 +19,30 @@ export const App = () => {
       <Button />
       <Button />
 
-    <hr />
-    {/*!-- Profileコンポーネントのタグをここに記述 --*/}
+      <hr />
+      {/*!-- Profileコンポーネントのタグをここに記述 --*/}
       <Profile />
 
-    <hr />
-    {/*!-- CardコンポーネントとCountryコンポーネントのタグをここに記述 --*/}
+      <hr />
+      {/*!-- CardコンポーネントとCountryコンポーネントのタグをここに記述 --*/}
       <Card>
-      <Country />
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+        />
       </Card>
-     </div>
+
+      <hr />
+      {/*!-- ulタグとTodoItemコンポーネントのタグをここに記述 --*/}
+      <ul>
+        <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
+        <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
+        <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
+      </ul>
+
+    </div>
   )
 }
 
