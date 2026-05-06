@@ -6,6 +6,7 @@ import { Card } from './components/Card'
 import { Country } from './components/Country'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
+import { AlertButton } from './components/AlertButton'
 
 export const App = () => {
   return (
@@ -47,6 +48,12 @@ export const App = () => {
       <hr />
       {/*!-- LanguageListコンポーネントのタグをここに記述 --*/}
       <LanguageList />
+
+       <hr />
+       {/*!-- AlertButtonコンポーネントのタグをここに記述 --*/}
+      <AlertButton />
+     
+
     </div>
   )
 }
