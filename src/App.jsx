@@ -8,6 +8,8 @@ import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
 import { AlertButton } from './components/AlertButton'
 import { InputField } from './components/InputField'
+import { CanceledError } from 'axios'
+import { CharacterImage } from './components/CharacterImage'
 
 export const App = () => {
   return (
@@ -57,11 +59,16 @@ export const App = () => {
        <hr />
        {/*!-- InputFieldコンポーネントのタグをここに記述 -- */}
        <InputField />
-     
 
+       <hr />
+       {/*!-- CharacterImageコンポーネントのタグをここに記述 --*/}
+       <CharacterImage />
+
+     
     </div>
   )
 }
 
 
 
+ 
