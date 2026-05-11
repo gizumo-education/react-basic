@@ -18,7 +18,7 @@ export const App = () => {
 
       {/* 以下に練習問題の回答を記述してください */}
       <hr />
-      <Button />
+      <Button isActive={true} />
       <Button />
       <Button />
       <hr />
