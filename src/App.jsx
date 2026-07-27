@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import Botton from './components/Button'
+import {Profile} from './components/Profile'
 export const App = () => {
     return (
         <div>
@@ -13,6 +14,10 @@ export const App = () => {
                 <Botton />
                 <Botton />
                 <Botton />
+            </div>
+            <hr />
+            <div>
+                <Profile />
             </div>
         </div>
     )
