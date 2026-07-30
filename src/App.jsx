@@ -2,6 +2,8 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import Botton from './components/Button'
 import {Profile} from './components/Profile'
+import { Country } from './components/Country'
+import { Card } from './components/Card'
 export const App = () => {
     return (
         <div>
@@ -18,6 +20,26 @@ export const App = () => {
             <hr />
             <div>
                 <Profile />
+            </div>
+            <hr />
+            <div>
+                <Country
+                    info={{
+                        imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+                        name: 'アメリカ'
+                    }}
+                />
+            </div>
+            <hr />
+            <div>
+                <Card>
+                    <Country
+                        info={{
+                            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+                            name: 'アメリカ'
+                        }}
+                    />
+                </Card>
             </div>
         </div>
     )
