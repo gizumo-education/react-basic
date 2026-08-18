@@ -5,6 +5,7 @@ import { Profile } from './components/Profile/index.jsx'
 import { Country } from './components/Country/index.jsx'
 import { Card } from './components/Card/index.jsx'
 import { TodoItem } from './components/TodoItem/index.jsx'
+import { LanguageList } from './components/LanguageList/index.jsx'
     
   export const App = () => {
     return(
@@ -14,9 +15,7 @@ import { TodoItem } from './components/TodoItem/index.jsx'
         {/* 以下に練習問題の回答を記述してください */} 
         <hr />
         {/*!-- Buttonコンポーネントのタグをここに3つ記述 --*/}
-        <footer>
-          <Button_A /><Button_A /><Button_A />
-        </footer>
+        <Button_A /><Button_A /><Button_A />
         <hr />
         {/*!-- Profileコンポーネントのタグをここに記述 --*/}
         <Profile/>
@@ -39,6 +38,9 @@ import { TodoItem } from './components/TodoItem/index.jsx'
           <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
           <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
         </ul>
+        {/*!-- リストレンダー --*/}
+        <hr />
+        <LanguageList/>
       </div>
     )
   }  
