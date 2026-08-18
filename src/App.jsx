@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button_A } from './components/Button/index.jsx'
+import { Profile } from './components/Profile/index.jsx'
     
   export const App = () => {
     return(
@@ -13,6 +14,9 @@ import { Button_A } from './components/Button/index.jsx'
         <footer>
           <Button_A /><Button_A /><Button_A />
         </footer>
+        <hr />
+        {/*!-- Profileコンポーネントのタグをここに記述 --*/}
+        <Profile/>
       </div>
     )
   }  
