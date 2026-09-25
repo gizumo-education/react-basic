@@ -5,6 +5,7 @@ import { Profile } from './components/Profile'
 import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
+import { LanguageList } from './components/LanguageList'
 
 
 export const App = () => {
@@ -28,7 +29,11 @@ export const App = () => {
       <hr />
       {/* <!-- CardコンポーネントとCountryコンポーネントのタグをここに記述 --> */}
       <Card>
-        <Country info={{ imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif', name: 'アメリカ' }} />
+        <Country
+        info={{ imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif', name: 'アメリカ' }}
+        width={120}
+        height={80}
+        />
       </Card>
 
       <hr />
@@ -38,6 +43,9 @@ export const App = () => {
         <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
+
+      <hr />
+      <LanguageList />
 
     </div>
   )
