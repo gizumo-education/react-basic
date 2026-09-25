@@ -13,8 +13,8 @@ export const Country = ({info, width, height}) => {
 
 Country.propTypes = {
   info: PropTypes.shape({
-    imgUrl:PropTypes.string,
-    name:PropTypes.string
+    imgUrl:PropTypes.string.isRequired,
+    name:PropTypes.string.isRequired
   }).isRequired,
   width:PropTypes.number, 
   height:PropTypes.number 
