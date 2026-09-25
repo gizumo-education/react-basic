@@ -4,10 +4,10 @@ import { useState } from 'react';
 
 
 export const InputField = () => {
-  const [value, setText] = useState('');
+  const [value, setValue] = useState('');
 
   function handleChange(e) {
-    setText(e.target.value);
+    setValue(e.target.value);
   }
 
   return (
