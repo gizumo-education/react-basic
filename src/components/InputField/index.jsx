@@ -1,8 +1,14 @@
 import styles from './index.module.css'
+import { useState } from 'react';
+
+
 
 export const InputField = () => {
-  let value = ''
+  const [value, setWords] = useState('');
 
+  function handleChange(e) {
+    setWords(e.target.value);
+  }
   return (
     <>
       <input onChange={(e) => value = e.target.value} className={styles.input} placeholder='任意の文字を入力' />
