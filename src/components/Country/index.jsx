@@ -1,11 +1,11 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
-export const Country = ({info, width, height, Customstyles = styles}) => {
+export const Country = ({info, width, height}) => {
   return (
     <div>
       <img src={info.imgUrl} width={width} height={height} />
-      <p className={Customstyles.name}>{info.name}</p>
+      <p className={styles.name}>{info.name}</p>
     </div>
   )
 }

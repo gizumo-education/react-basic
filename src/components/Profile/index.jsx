@@ -9,9 +9,9 @@ export const Profile = () => {
 
   return (
     <>
-    <img src={imgUrl} className={styles.avatar}/>
-    <p className={styles.sentence}>I am {name}</p>
-    <p className={styles.sentence}>BirthDay:{getBirthDay()} </p>
+      <img src={imgUrl} className={styles.avatar} />
+      <p className={styles.sentence}>I am {name}</p>
+      <p className={styles.sentence}>BirthDay:{getBirthDay()} </p>
     </>
   )
 }
