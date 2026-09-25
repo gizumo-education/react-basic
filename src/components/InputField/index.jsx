@@ -4,14 +4,15 @@ import { useState } from 'react';
 
 
 export const InputField = () => {
-  const [value, setWords] = useState('');
+  const [value, setText] = useState('');
 
   function handleChange(e) {
-    setWords(e.target.value);
+    setText(e.target.value);
   }
+
   return (
     <>
-      <input onChange={(e) => value = e.target.value} className={styles.input} placeholder='任意の文字を入力' />
+      <input onChange={handleChange} className={styles.input} placeholder='任意の文字を入力' />
       <p>入力文字：{value}</p>
     </>
   )

@@ -33,9 +33,9 @@ export const App = () => {
       {/* <!-- CardコンポーネントとCountryコンポーネントのタグをここに記述 --> */}
       <Card>
         <Country
-        info={{ imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif', name: 'アメリカ' }}
-        width={120}
-        height={80}
+          info={{ imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif', name: 'アメリカ' }}
+          width={120}
+          height={80}
         />
       </Card>
 
