@@ -2,6 +2,8 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button' //s4練習問題
 import { Profile } from './components/Profile'//s5練習問題
+import { Country } from './components/Country'//s6練習問題
+import { Card } from './components/Card'//s6練習問題の2
 
 export const App =()=> {
   return (
@@ -18,6 +20,15 @@ export const App =()=> {
 
       <hr />
       <Profile />
+
+      <hr />
+      <Card>
+        <Country
+          info={{
+          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+          name: 'アメリカ'
+        }} />
+      </Card>
 
     </div>
   )
