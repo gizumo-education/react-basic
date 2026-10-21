@@ -6,14 +6,13 @@ import { Country } from './components/Country'//s6練習問題
 import { Card } from './components/Card'//s6練習問題の2
 import { TodoItem } from './components/TodoItem'//s7練習問題
 import { LanguageList } from './components/LanguageList'//s8練習問題
+import { AlertButton } from './components/AlertButton'//s9練習問題
 
 export const App =()=> {
   return (
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
       <h1>Hello React!</h1>
-
-      {/* 以下に練習問題の回答を記述してください */}
 
       <hr />
       <Button />
@@ -41,6 +40,9 @@ export const App =()=> {
 
       <hr />
       <LanguageList />
+
+      <hr />
+      <AlertButton />
 
     </div>
   )
