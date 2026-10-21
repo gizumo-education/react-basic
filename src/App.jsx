@@ -8,6 +8,7 @@ import { TodoItem } from './components/TodoItem'//s7練習問題
 import { LanguageList } from './components/LanguageList'//s8練習問題
 import { AlertButton } from './components/AlertButton'//s9練習問題
 import { InputField } from './components/InputField'//s10練習問題
+import { CharacterImage } from './components/CharacterImage'//s11練習問題
 
 export const App =()=> {
   return (
@@ -47,6 +48,9 @@ export const App =()=> {
 
       <hr />
       <InputField />
+
+      <hr />
+      <CharacterImage />
 
     </div>
   )
