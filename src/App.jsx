@@ -2,6 +2,7 @@ import reactLogo from "./assets/react.svg";
 import styles from "./App.module.css";
 
 import { Button } from "./components/Button/index.jsx";
+import { Profile } from "./components/Profile/index.jsx";
 
 export const App = () => {
   return (
@@ -14,6 +15,9 @@ export const App = () => {
       <Button />
       <Button />
       <Button />
+      <hr />
+      {/* <!-- Profileコンポーネントのタグをここに記述 --> */}
+      <Profile />
     </div>
   );
 };
