@@ -6,6 +6,7 @@ import { Profile } from "./components/Profile/index.jsx";
 import { Country } from "./components/Country/index.jsx";
 import { Card } from "./components/Card/index.jsx";
 import { TodoItem } from "./components/TodoItem/index.jsx";
+import { LanguageList } from "./components/LanguageList/index.jsx";
 
 export const App = () => {
   return (
@@ -44,6 +45,9 @@ export const App = () => {
           isCompleted={false}
         />
       </ul>
+      <hr />
+      {/* <!-- LanguageListコンポーネントのタグをここに記述 --> */}
+      <LanguageList />
     </div>
   );
 };
